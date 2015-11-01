@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Personal Site</title>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="public/css/main.css">
+	<link rel="stylesheet" href="public/css/posts.css">
+	<link rel="stylesheet" href="public/css/aboutMe.css">
+	<link rel="stylesheet" href="public/css/tech.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.1/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+</head>
+
+<body 	ng-app="personalSite"
+		ng-controller="mainCtrl">
+
+<div id="header">
+
+	<div class="logo">r-walsh //{{ page }}</div>
+
+	<div class="clear"></div>
+
+	<ul id="nav-bar">
+		<a ng-click="changePage('home')" ui-sref="home"><li class="nav-item">Home</li></a>
+		<a ng-click="changePage('technology')" ui-sref="technology"><li class="nav-item">Technologies</li></a>
+		<a ng-click="changePage('about me')" ui-sref="about"><li class="nav-item">About</li></a>
+	</ul>
+
+</div>
+
+<div id="profile-container">
+
+	<ul id="profile-links">
+
+		<li class="profile-item"><a href="https://github.com/r-walsh"><img src="public/img/GitHub-Mark-32px.png" /></a></li>
+		<li class="profile-item linkedin"><a href="https://www.linkedin.com/pub/ryan-walsh/a2/669/175"><img src="https://static.licdn.com/scds/common/u/img/webpromo/btn_in_20x15.png"></a></li>
+		<li class="profile-item"><a href="https://twitter.com/_rtwalsh"><img src="public/img/TwitterLogo.png"/></a></li>
+
+	</ul>
+
+</div>
+
+<div ui-view></div>
+
+<footer>
+	
+</footer>
+
+<script src="public/app.js"></script>
+<script src="public/mainCtrl.js"></script>
+<script src="public/postCtrl.js"></script>
+<script src="public/techCtrl.js"></script>
+
+</body>
+
+</html>
