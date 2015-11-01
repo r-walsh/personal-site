@@ -1,5 +1,18 @@
 .todo-list {
   list-style: none;
+  float: left;
+  padding: 0;
+  padding-right: 90px;
+  border-right: 1px solid #e1e1e1;
+  width: 40%;
+}
+.current-stack {
+  list-style: none;
+  float: right;
+  text-align: right;
+  padding: 0;
+  margin: 0;
+  width: 40%;
 }
 .suggest-tech {
   background-color: #be9b7b;
@@ -9,6 +22,7 @@
   margin: 0 auto;
   text-align: center;
   border: none;
+  border-radius: 2%;
   font-size: 1em;
   font-weight: bold;
 }
@@ -22,16 +36,17 @@
 }
 ::-webkit-input-placeholder {
   color: #000;
+  opacity: 0.55;
 }
 :-moz-placeholder {
   color: #000;
-  opacity: 0.65;
+  opacity: 0.55;
 }
 ::-moz-placeholder {
   color: #000;
-  opacity: 0.65;
+  opacity: 0.55;
 }
 :-ms-input-placeholder {
   color: #000;
-  opacity: 0.65;
+  opacity: 0.55;
 }

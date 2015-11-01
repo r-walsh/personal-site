@@ -8,6 +8,7 @@ body {
   font-family: 'Raleway', sans-serif;
   overflow: visible;
   color: #000;
+  line-height: 1.6em;
 }
 .clear {
   clear: both;
@@ -63,10 +64,18 @@ body {
 }
 #profile-links {
   list-style: none;
-  text-align: center;
 }
-#profile-links .linkedin {
-  margin-left: 7px;
+#profile-links i {
+  color: #000;
+}
+#profile-links .github:hover {
+  color: #4078c0;
+}
+#profile-links .linkedin:hover {
+  color: #0077b5;
+}
+#profile-links .twitter:hover {
+  color: #55acee;
 }
 .wrapper {
   width: 40%;

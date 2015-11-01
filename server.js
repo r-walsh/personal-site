@@ -16,6 +16,19 @@ mongoose.connection.once('open', function() {
 	console.log('connected to mongo at ' + mongoUri);
 });
 
+/////////////
+//ENDPOINTS//
+/////////////
+var techCtrl = require('./controllers/techCtrl.js');
+
+//TECHS////
+
+app.post('/api/suggest-tech', techCtrl.suggestTech);
+
+app.get('/api/techs', techCtrl.getTechs);
+
+////////
+
 app.listen(port, function() {
 	console.log('Listening on ' + port);
 });

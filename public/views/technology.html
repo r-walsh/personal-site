@@ -1,15 +1,29 @@
 <div class="wrapper">
 	
-	<h3>I am always seeking out new technologies to learn. Here's my current todo list:</h3>
+	<h3>I am always seeking out new technologies to learn. Here's my todo list and current stack:</h3>
 
 	<ul class="todo-list">
-		<li>Ruby on Rails<b> - Current</b></li>
-		<li ng-repeat="tech in technologies">{{ tech }}</li>
+		<li><b>To Learn</b></li>
+		<li ng-repeat="tech in technologies | limitTo:10">
+			{{ tech.name }}<b ng-if="tech.current"> - Current</b><em ng-if="!tech.approved"> - Suggested</em>
+		</li>
 	</ul>
 
+	<ul class="current-stack">
+		<li><b>Current Stack</b></li>
+		<li>Angular</li>
+		<li>Node</li>
+		<li>Mongo</li>
+		<li>Express</li>
+		<li>Mongoose</li>
+		<li>Gulp</li>
+	</ul>
+
+	<div class="clear"></div>
+
 	<h4>See something missing? Have an awesome suggestion? Let me know!</h4>
-	<input class="suggest-tech" placeholder="Magic on Rails" type="text">
-	<button class="submit-tech">Learn this!</button>
+	<input ng-model="suggestedTech" class="suggest-tech" placeholder="Magic on Rails" type="text">
+	<button ng-click="submitTech()" class="submit-tech">Learn this!</button>
 	
 
 </div>

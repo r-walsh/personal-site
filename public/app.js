@@ -18,7 +18,15 @@ app.config(function( $stateProvider, $urlRouterProvider ) {
 		.state('technology', {
 			url: '/technology',
 			templateUrl: './public/views/technology.html',
-			controller: 'techCtrl'
+			controller: 'techCtrl',
+			resolve: {
+				techs: function( $http ) {
+					return $http.get('/api/techs')
+						.then(function( response ) {
+							return response.data;
+					});
+				}
+			}
 		})
 
 		
