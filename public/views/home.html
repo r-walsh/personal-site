@@ -1,21 +1,25 @@
 <div class="wrapper">
-	<div class="post-container" ng-repeat="post in posts">
-		<p class="date">{{ post.date }}</p>
-		<h3 class="post-title">{{ post.title }}</h3>
+	<div class="post-container">
+		<p class="date">1 November 2015</p>
+		<h3 class="post-title">Progress</h3>
 		<p class="post-content">
-			 This weekend I decided to forego any of the usual exciting weekend activities (watching netflix alone and drinking beer) and start learning AngularJS. I began with some pre-reading of a handful of blogs, the majority of which went well over my head, and Codecademy's Angular track. First impression: <b>This framework runs on magic.</b>
+			I was looking back through projects I had completed during my time as a student at DevMountain and paused to reflect on my progress. I started the course on August 24th, shortly over two months ago, and the amount of knowledge that has been crammed into my head is staggering. As a reference I'd like to point back to my most complicated project before coming to DevMountain. A simple <a href="http://codepen.io/anon/pen/pjZzdg">color game</a> made in jQuery.
 		</p>
+
 		<p class="post-content">
-			One of the first things Codecademy introduced was filters. Seeing as I had just finished a jQuery project that required a specially formatted date, the date filter stood out the most. I had just written something with the same functionality in less characters than my jQuery function had <em>lines</em>. Obviously filters are only a piece of the Angular framework, but this had grabbed my attention. I jumped into some tiny Angular tutorial projects to get my hands dirty and quickly began to see the utility of the framework, even at the most basic levels.		
+			At the time getting that game up and functional was an all day task for me, leading to an incredible amount of excitement once it was completed. I didn't mind that the CSS was hacked up or that I had a boatload of global variables. It was just <em>cool</em> that I had actually created something from scratch that worked. And that feeling remains my favorite part of programming. When everything starts to come together into a fully functional web app there is an undeniable sense of success that simply cannot be topped.
 		</p>
+
 		<p class="post-content">
-			The first big stumbling block I ran into was the error messages. I was working on writing a custom filter to search a friends list by current location and I failed to properly load the module containing the filter. On running the code my console was filled with dozens of error messages, most of which referenced bits of unintelligible minified Angular source code. Once again Sean Walsh helped me out with his <a href="http://swalsh.org/blog/2014/07/01/quick-tip-angular-debugging/">blog post</a> on Angular debugging.
+			Looking back on the project there is a significant amount I would change, but I don't think I will ever complete a project and not be able to browse through it and find a dozen things I would do differently. Every line of code written increases my experience and(hopefully) teaches me better practices, so I can write that line better the next time around.
 		</p>
+
 		<p class="post-content">
-			I am blown away by helpfulness of the links the errors give you, even referencing other errors, all personalized to your code. After following a daisy chain of links I was able to track down the error in my code and load the module correctly (though the filter logic is still a work in progress).
-			</p>
+			Even looking back just a few weeks to my <a href="https://github.com/r-walsh/topicSurvey">personal project</a> I find a huge amount of things I would change. (And please excuse the complete lack of polish, I was pulled from this project to another one shortly after getting it <em>mostly</em> functional). There are too few controllers and too much business logic in those controllers. Much of the code in the services could have been written significantly cleaner, particularly using underscore.js or lodash. There are extraneous endpoints and correlated functions that are never called. The schemas would require a significant re-work to properly implement authentication.
+		</p>
+
 		<p class="post-content">
-			Overall I am hugely impressed with Angular. When things are working how you want them to it is just incredible, when things are broken there are fantastic resources for tracking down why. You can check out my first Angular project <a href="https://github.com/r-walsh/angular-friends">here</a>, still a work in progress at the time of writing.
+			Compared to my current projects the code is a mess, but I take that as a good thing. It means I am improving with every step. I truly hope that every time I look back on old code I find things I would change, because that means I haven't stopped improving.
 		</p>
 	
 	</div>
