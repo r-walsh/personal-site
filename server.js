@@ -3,7 +3,7 @@ var express = require('express'),
 	mongoose = require('mongoose'),
 	bodyParser = require('body-parser'),
 	cors = require('cors'),
-	port = 3000,
+	port = 80,
 	dbName = 'personalSite',
 	mongoUri = 'mongodb://localhost:27017/' + dbName;
 
